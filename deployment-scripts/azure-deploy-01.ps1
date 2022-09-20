@@ -31,5 +31,5 @@ $allowAzureIpsRule = New-AzSqlServerFirewallRule `
 $database = New-AzSqlDatabase  -ResourceGroupName $resourceGroupName `
     -ServerName $serverName `
     -DatabaseName $databaseName `
-    -Edition "GeneralPurpose" -Vcore 4 -ComputeGeneration "Gen5" `
+    -Edition "GeneralPurpose" -Vcore 1 -ComputeGeneration "Gen5" `
     -ComputeModel Serverless -MinimumCapacity 0.5
